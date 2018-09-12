@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://mechanic-store.com/templates/default/img/pattern.png');
+}
+
+.head {
+    background-color: #fff;
+    height: 80px;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+}
+
+.home {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left: 400px;
+    top: 28px;
+}
+
+.home:hover {
+    color: blueviolet;
+}
+
+.test {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left: 500px;
+    top: 28px;
+}
+
+.test:hover {
+color: blueviolet;
+}
+
+.tset {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left: 580px;
+    top: 28px;
+}
+
+.tset:hover {
+    color: blueviolet;
+}
+
+.status {
+    background-color: #fff;
+    width: 600px;
+    height: 150px;
+    /*margin-left: 560px;
+    margin-top: 100px;*/
+    position: absolute;
+    left: 360px;
+    bottom: 350px;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+}
+
+.teststatus {
+    font-weight: 900;
+    position: absolute;
+    left: 234px;
+    top: 73px;
+    font-size: 23px;
+}
+
+.saidbar {
+    background-color: #fff;
+    width: 300px;
+    height: 500px;
+    /*margin-right: 650px;*/
+    position: absolute;
+    top: 119px;
+    left: 300px;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+}
+
+.avatar {
+    background-image: url('../img/avatar.jpg');
+    height: 330px;
+}
+
+.admin {
+    position: absolute;
+    right: 783px;
+    top: 360px;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+.online {
+    position: absolute;
+    right: 780px;
+    top: 410px;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+}

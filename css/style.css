@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://mechanic-store.com/templates/default/img/pattern.png');
+}
+
+.head {
+    background-color: #597ba5;
+    height: 80px;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+/*Пока не нужно.*/
+/*.reg {
+    text-decoration: none;
+    margin-right: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    font-family: cursive;
+    font-size: 15px;
+    border: 2px solid white;
+    width: 150px;
+    height: 19px; 
+    overflow: hidden;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    min-width: 88px;
+    text-align: center;
+    border-radius: 6px;
+    user-select: none;
+    border: 2px solid;
+    outline: none;
+    padding: 5px 0px; 
+}
+
+.reg:hover {
+    background-color: deeppink;
+    border-color: deeppink;
+    transition: .7s;
+}*/
+.content {
+    width: 100%;
+    height: 500%;
+    display: flex;
+    justify-content: center;
+}
+ .main_content {
+    width: 70%;
+    margin-top: 50px;
+}
+.forms {
+    width: 20%;
+}
+
+.form_signin, .form_signup {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.form_signup {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form_signin {
+    height: 200px;
+}
+.form_signin input, .form_signup input {
+    width: 75%;
+    height: 35px;
+    border: none;
+    border: 1px solid #BEC4C9;
+    border-radius: 10px;
+    padding: 2px;
+}
+.form_signin button, .form_signup button {
+    border: none;
+    background: white;
+    border: 1px solid #BEC4C9;
+    padding: 10px;
+    border-radius: 10px;
+    color: #484E53;
+    transition: 0.3s;
+}
+.form_signin button:hover, .form_signup button:hover {
+    background: #484E53;
+    color: white;
+    border-color: #007BFF;
+}
