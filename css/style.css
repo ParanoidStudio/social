@@ -80,11 +80,12 @@ body {
 .form_signin {
     height: 200px;
 }
+.input_error {
+    border-color:  red;
+}
 .form_signin input, .form_signup input {
     width: 75%;
     height: 35px;
-    border: none;
-    border: 1px solid #BEC4C9;
     border-radius: 10px;
     padding: 2px;
 }
@@ -101,4 +102,19 @@ body {
     background: #484E53;
     color: white;
     border-color: #007BFF;
+}
+select {
+    border: none;
+    border: 1px solid #BEC4C9;
+    padding: 10px;
+    border-radius: 10px;
+    width: 75%;
+    color: #484E53;
+}
+.form_input {
+    border: none;
+    border: 1px solid #BEC4C9;    
+}
+.input_error {
+    border: 1px solid red;
 }
