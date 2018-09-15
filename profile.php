@@ -1,5 +1,7 @@
 <?php
-require 'includes/rb.php';
+require 'includes/config.php';
+if (isset($_SESSION['logged_user'])) {
+
 ?>
 <!DOCTYPE html>
  <html>
@@ -26,21 +28,25 @@ require 'includes/rb.php';
       <div class="head">
 
         <h1 class="logo"><a href="index.php"><i class="fas fa-exclamation"></i></a></h1>
+        <a href="includes/logout.php">Выход из аккаунта</a>   
          </div>
 
          <main>
         <div class="sidebar">
          <div class="user_photo"></div>
           <div class="user_status">
-            <p class="user_name">Admin</p>
-            <p class="on-line">ОНЛАЙН</p>
+            <p class="on-line"> Online</p>
            </div>
          </div>
 
          <div class="content">
 
           <div class="user_info">
-            <h2 class="user_name_surname">Александр Куликов</h2>
+            <h2 class="user_name_surname"><?php
+                  echo $_SESSION['logged_user']->name;
+                  echo " ";
+                  echo $_SESSION['logged_user']->surname;
+                  ?></h2>
             <p class="status">Ваши границы пустая формальность, считайте меня гражданином мира.</p>
           </div>
 
@@ -65,7 +71,11 @@ require 'includes/rb.php';
               <div class="post_user_info">
                 <div class="post_user_info_photo"></div>
                 <div class="post_user_info_container">
-                  <a class="post_user_info_name">Александр Куликов</a>
+                  <a class="post_user_info_name"><?php
+                  echo $_SESSION['logged_user']->name;
+                  echo " ";
+                  echo $_SESSION['logged_user']->surname;
+                  ?></a>
                   <div class="post_user_info_date">15 сентября 2018г.</div>
                 </div>
               </div>
@@ -92,3 +102,7 @@ require 'includes/rb.php';
              </main>
  </body>
 </html>
+<?php
+} else  {
+  header('Location: http://social/index.php');
+}

@@ -52,14 +52,27 @@ if (isset($data['do_login'])) {
               <form class="form_signin" method="POST">
                 <input type="text" name="email_signin" placeholder="Login или Email">
                 <input type="password" name="password_signin" placeholder="Пароль">
-                <button class="button" name="do_login">Войти</button>
+                <button class="button" name="do_login" id='button_signin'>Войти</button>
       <?php
+      
                if( ! empty($errors_signin)) {
     echo '<center><div style="color: red; margin-top:10px; font-size: 20px;">'.array_shift($errors_signin).'</div></center>';
    } 
 if (isset($_SESSION['logged_user'])) {
   ?>
   <center><hr><div style="color: #484E53; margin-top:10px; font-size: 20px;">Вы успешно авторизованы!</div></center>
+  <script type="text/javascript">
+   
+  location="profile.php";
+
+  document.location.href="profile.php";
+
+  location.replace("profile.php");
+
+  window.location.reload("profile.php");
+
+  document.location.replace("profile.php");
+  </script>
 
   <?php
 } 
