@@ -18,7 +18,7 @@ body {
     width: 100%;
 }
 /*Пока не нужно.*/
-/*.reg {
+.reg {
     text-decoration: none;
     margin-right: 600px;
     padding-right: 10px;
@@ -45,7 +45,7 @@ body {
     background-color: deeppink;
     border-color: deeppink;
     transition: .7s;
-}*/
+}
 .content {
     width: 100%;
     height: 500%;
@@ -53,7 +53,7 @@ body {
     justify-content: center;
 }
  .main_content {
-    width: 70%;
+    width: 65%;
     margin-top: 50px;
 }
 .forms {
@@ -89,6 +89,10 @@ body {
     border-radius: 10px;
     padding: 2px;
 }
+.form_signin input {
+    border: none;
+    border: 1px solid #BEC4C9; 
+}
 .form_signin button, .form_signup button {
     border: none;
     background: white;
@@ -116,5 +120,17 @@ select {
     border: 1px solid #BEC4C9;    
 }
 .input_error {
-    border: 1px solid red;
+    border: 1px solid #FF6767;
+}
+@media screen and (max-width: 1000px) {
+    .forms {
+        width: 80%;
+    }
+    .main_content {
+        width: 80%;
+    }
+    .content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
