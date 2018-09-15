@@ -24,19 +24,24 @@ if (isset($data['do_login'])) {
       <link rel="stylesheet" href="css/style.css">
       <script type="text/javascript" src="css/style.css"></script>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
      </head>
      <body>
           
       <!-- HEADER -->
           <div class="head">
-       <!--      <div class="logo">
-            <a href="#" class="reg">Регистрация</a>-->
+
+        <h1 class="logo"><a href="index.php"><i class="fas fa-exclamation"></i></a></h1>
           </div> 
 
       <!-- CONTENT -->
           <div class="content">
             <div class="main_content">
-              <h1>Какая-то инфа</h1>
+              <div class="info">
+                <h1 >САМАЯ ПИЗДАТАЯ СОЦ. СЕТЬ</h1>
+              </div>
+
             </div>
 
 

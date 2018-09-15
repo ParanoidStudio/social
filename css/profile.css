@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+}
+
+body {
+    background-image: url('https://mechanic-store.com/templates/default/img/pattern.png');
+}
+
+.head {
+    background-color: #597ba5;
+    height: 80px;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.logo {
+    margin-left: 20%;
+    color: white;
+}
+.logo a {
+    color: white;
+}
+.logo i{
+    transition: 0.5s;
+}
+.logo i:hover {
+    transform: rotate(20deg);
+}
+.user_status {
+    background-color: #fff;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+    width: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 30%;
+}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.sidebar {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 500px;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+    margin-left: 10%;
+}
+.on-line {
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+}
+.user_photo {
+    background-image: url('http://fandea.ru/upload/000/u1/037/00ec1617.jpg');
+    height: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.user_name {
+    font-family: sans-serif;
+    font-size: 24px;
+}
+.content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7%;
+}
+.user_info {
+    width: 100%;
+    height: 150px;
+    background: white;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.user_name_surname {
+    color: black;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: 400;
+    width: 95%;
+    margin-left: 5%;
+}
+.status {
+    margin-left: 5%;
+    width: 95%;
+    color: #484E53;
+}
+.add_post {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.post button {
+    width: 20%;
+    color: white;
+    height: 35px;
+    border: none;
+    background: #597BA5;
+    border-radius: 5px;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    transition: 0.3s;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.post button:hover {
+    border: 1px solid #597BA5;
+    background: white;
+    color: #597BA5;
+}
+.button_input {
+    display: flex;
+    margin: 0;
+}
+.post input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border: 1px solid #BEC4C9;
+    border-radius: 10px;
+    padding: 5px;
+      box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+}
+
+.posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.new_post {
+    width: 100%;
+    background: white;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+}
+.post_user_info {
+    width: 95%;
+    margin-top: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
+}
+.post_user_info_photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 5%;
+    background-image: url('http://fandea.ru/upload/000/u1/037/00ec1617.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.post_user_info_container {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.post_user_info_name {
+    font-size: 26px;
+    color: #2a5885;
+}
+.post_user_info_date {
+    color: #939393;
+}
+.post_content{
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.post_text {
+    width: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-weight: 400;
+}
+.post_photo {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.post_photo img {
+    flex: 1 1 calc(45%);
+    margin: 10px;
+    margin-left: 0;
+}
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar {
+        margin: 0;
+        width: 100%;
+    }
+    .content {
+        margin: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+
+/*ДЛЯ INPUT TYPE FILE*/
+.chous {
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 14px/50px Tahoma;
+    transition: all 0.18s ease-in-out;
+    border: 1px solid #597BA5;
+    background: linear-gradient(to top right, #597BA5, #9FC1EB 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0)) top right/500% 500%;
+    color: #597BA5;
+
+}
+.chous:hover {
+    color: white;
+    background-position: bottom left;
+}
+    
+.my {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+}
