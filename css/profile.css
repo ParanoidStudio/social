@@ -97,10 +97,10 @@ main {
     font-weight: 400;
     width: 95%;
     margin-left: 5%;
+    z-index: 1;
 }
 .status {
     margin-left: 5%;
-    width: 95%;
     color: #484E53;
 }
 .add_post {
@@ -258,4 +258,63 @@ main {
   overflow: hidden;
   z-index: -1;
   position: absolute;
+}
+.status_container {
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+    width: 95%;
+}
+.status_add_button {
+    margin-left: 1%;
+    color: #484E53;
+}
+.status_add_button i {
+    transition: 0.2s;
+}
+.status_add_button i:hover {
+    color: grey;
+    transform: rotate(45deg);
+}
+.form_status{
+    z-index: 0;
+    position: absolute;
+    margin-left: 2.5%;
+    display: none;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+}
+.form_status input {
+    border: none;
+    border: 1px solid #484E53;
+    border-radius: 5px;
+    padding: 5px;
+}
+.form_status button {
+    color: #484E53;
+    border: none;
+    background: white;
+    border-radius: 5px;
+    box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+    font-size: 15px;
+    transition: 0.3s;
+    margin-right: 5px;
+    border: 1px solid #484E53;
+    margin-left: 10px;
+    height: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.form_status button:hover{
+    background: #484E53;
+    color: white;
+}
+#status_message {
+    color: red;
+    font-size: 15px;
+}
+#new_post_message {
+    color: green;
+    font-size: 15px;
 }

@@ -52,6 +52,7 @@ if (empty($errors)) {
   $users->password = password_hash($data['password'], PASSWORD_DEFAULT);
   $users->root = 0;
   $users->date = date("Y-m-d H:i:s");
+  $users->status = 'Без статуса';
   R::store($users);
   ?>
   <script type="text/javascript">

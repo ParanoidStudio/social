@@ -1,12 +1,12 @@
 <?php
 require 'includes/config.php';
 if (isset($_SESSION['logged_user'])) {
-
+$data = $_POST;
 ?>
 <!DOCTYPE html>
  <html>
   <head>
-     <title>TEST</title>
+     <title>FUCK</title>
       <meta charset="utf-8">
       <link rel="stylesheet" href="css/profile.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -39,6 +39,24 @@ if (isset($_SESSION['logged_user'])) {
            </div>
          </div>
 
+<!-- Обновление статуса -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#form_status').submit(function(event) {
+      event.preventDefault();
+      var status = $('#status_input').val();
+      $('.status').load("includes/status.php", 
+      {
+        status: status
+        })
+    });
+  });
+
+
+</script>
+
+
+
          <div class="content">
 
           <div class="user_info">
@@ -47,20 +65,51 @@ if (isset($_SESSION['logged_user'])) {
                   echo " ";
                   echo $_SESSION['logged_user']->surname;
                   ?></h2>
-            <p class="status">Ваши границы пустая формальность, считайте меня гражданином мира.</p>
-          </div>
+            <div class="status_container">
+            <p class="status"><?php echo $_SESSION['logged_user']->status;?></p>
+            <a class="status_add_button"> <i class="fas fa-pen"></i></a>
+            <form class="form_status" action="includes/status.php" method="POST" id="form_status">
+              <input type="text" name="status" value="<?php echo $_SESSION['logged_user']->status;?>" id="status_input">
+              <button id="change_status" type="submit">Изменить</button>
+              <p id="status_message"></p>
+            </form>
+            <script type="text/javascript">
 
+                $('.status_add_button').on('click', function(){
+                $('.form_status').css({'display':'flex'});
+                $('.status_add_button').css({'opacity':'0'});
+                $('.status').css({'opacity':'0'})
+                });
+            </script>
+            </div>
+
+          </div>
+<!-- ОТПРАВКА ПОСТА -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.post').submit(function(yo) {
+      yo.preventDefault();
+      var post_text = $('#post_input').val();
+      $('#new_post_message').load("includes/post.php", 
+      {
+        post_text: post_text
+        })
+    });
+  });
+
+
+</script>
           <div class="add_post">
-            <form class="post">
+            <form class="post" action="includes/post.php" method="POST">
                 <div class="button_input">
-              <input type="text" name="" placeholder="Что у вас нового?">
+              <input type="text" name="post_text" id='post_input' placeholder="Что у вас нового?">
          <div class="dada">
             <label for="myfile" class="chous"><i class="fas fa-camera"></i></label>
-            <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+            <input type="file" class="my" id="myfile" name="post_image" multiple="multiple"/>
           </div>
         </div>  
               <button type="submit">Поделиться</button>
-              
+              <p id="new_post_message"></p>
 
             </form>
           </div>
@@ -97,6 +146,8 @@ if (isset($_SESSION['logged_user'])) {
             
             </div>
          </div>
+
+
 
        </div>
              </main>
