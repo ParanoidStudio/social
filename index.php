@@ -19,10 +19,9 @@ if (isset($data['do_login'])) {
 <!DOCTYPE html>
  <html>
   <head>
-     <title>Пампушка</title>
+     <title>FUCK</title>
       <meta charset="utf-8">
       <link rel="stylesheet" href="css/style.css">
-      <script type="text/javascript" src="css/style.css"></script>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -30,10 +29,14 @@ if (isset($data['do_login'])) {
      <body>
           
       <!-- HEADER -->
-          <div class="head">
-
-        <h1 class="logo"><a href="index.php"><i class="fas fa-exclamation"></i></a></h1>
-          </div> 
+      <div class="head">
+        <div class="first_head_container">
+        <h1 class="logo"><a href="index.php"><i class="fas fa-home"></i></a></h1>
+        </div>
+        <div class="second_head_container">
+        <!-- <h1 ><i class="fas fa-exclamation"></i></h1> -->
+         </div>
+        </div>
 
       <!-- CONTENT -->
           <div class="content">

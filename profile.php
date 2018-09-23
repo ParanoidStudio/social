@@ -26,11 +26,15 @@ $data = $_POST;
 
 
       <div class="head">
-
-        <h1 class="logo"><a href="index.php"><i class="fas fa-exclamation"></i></a></h1>
+        <div class="first_head_container">
+        <h1 class="logo"><a href="profile.php"><i class="fas fa-home"></i></a></h1>
+        <h1 class="logo"><a href="news.php"><i class="far fa-newspaper"></i></a></h1>
+        </div>
+        <div class="second_head_container">
+        <!-- <h1 ><i class="fas fa-exclamation"></i></h1> -->
         <a href="includes/logout.php">Выход из аккаунта</a>   
          </div>
-
+        </div>
          <main>
         <div class="sidebar">
          <div class="user_photo"></div>
@@ -114,37 +118,16 @@ $data = $_POST;
             </form>
           </div>
 
+
          <div class="posts">
-            <div class="new_post">
-              <!-- INFO -->
-              <div class="post_user_info">
-                <div class="post_user_info_photo"></div>
-                <div class="post_user_info_container">
-                  <a class="post_user_info_name"><?php
-                  echo $_SESSION['logged_user']->name;
-                  echo " ";
-                  echo $_SESSION['logged_user']->surname;
-                  ?></a>
-                  <div class="post_user_info_date">15 сентября 2018г.</div>
-                </div>
-              </div>
-              <!-- POST -->
-              <div class="post_content">
-                <div class="post_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum felis a ante porttitor, eget laoreet eros consequat. Donec fringilla dapibus neque non efficitur. Nulla a nulla vulputate, gravida quam eget, pharetra lectus. Donec consectetur a nunc a imperdiet. Nunc mattis malesuada erat, id ullamcorper ante dictum eu. Proin blandit consectetur libero ac sodales. Quisque in finibus felis. Suspendisse ante est, pellentesque vel mattis quis, laoreet nec nibh. Etiam accumsan libero eget felis dictum, nec tincidunt lectus elementum. Nulla sit amet maximus erat. Morbi dignissim sapien ac lacus volutpat mattis.
-                </div>
+          <script type="text/javascript">
 
-                 <div class="post_photo">
-                <img src="https://media.rusbase.com/upload_tmp/sv6.jpg" style="width: 400px; height: 300px;">
-                 <img src="https://media.rusbase.com/upload_tmp/sv6.jpg" style="width: 400px; height: 300px;">
-                  <img src="https://media.rusbase.com/upload_tmp/sv6.jpg" style="width: 400px; height: 300px;">
-                   <img src="https://media.rusbase.com/upload_tmp/sv6.jpg" style="width: 400px; height: 300px;">
-
-              </div>
-
-              </div>
-
-            
-            </div>
+            $(document).ready(function() {
+            setInterval(function load() {
+                $('.posts').load('includes/fast.php');
+              }, 100);
+            });
+          </script>
          </div>
 
 

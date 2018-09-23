@@ -9,7 +9,7 @@ body {
 }
 
 .head {
-    background-color: #597ba5;
+    background-color: #0F0F0F;
     height: 80px;
     box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
     border-radius: 2px;
@@ -21,20 +21,31 @@ body {
 }
 .head a {
     color: white;
-    margin-right: 5%;
 }
 .logo {
-    margin-left: 20%;
     color: white;
-}
-.logo a {
-    color: white;
+    margin-left: 25%;
 }
 .logo i{
     transition: 0.5s;
 }
 .logo i:hover {
     transform: rotate(20deg);
+}
+.first_head_container {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.second_head_container {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.second_head_container a {
+    margin-right: 16%;
 }
 .user_status {
     background-color: #fff;
@@ -45,6 +56,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 20%;
+
 }
 main {
     width: 100%;
@@ -61,6 +73,7 @@ main {
     height: 450px;
     box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
     margin-left: 10%;
+
 }
 .on-line {
     font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
@@ -119,7 +132,7 @@ main {
     color: white;
     height: 35px;
     border: none;
-    background: #597BA5;
+    background: #0F0F0F;
     border-radius: 5px;
     box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
     font-family: 'Roboto', sans-serif;
@@ -129,9 +142,9 @@ main {
     margin-top: 5px;
 }
 .post button:hover {
-    border: 1px solid #597BA5;
+    border: 1px solid #0F0F0F;
     background: white;
-    color: #597BA5;
+    color: #0F0F0F;
 }
 .button_input {
     display: flex;
@@ -151,12 +164,12 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
 }
 .new_post {
     width: 100%;
     background: white;
     box-shadow: -1px 4px 20px -8px rgba(0,0,0,0.62);
+    margin-top: 50px;
 }
 .post_user_info {
     width: 95%;
@@ -241,9 +254,9 @@ main {
     align-items: center;
     font: 14px/50px Tahoma;
     transition: all 0.18s ease-in-out;
-    border: 1px solid #597BA5;
-    background: linear-gradient(to top right, #597BA5, #9FC1EB 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0)) top right/500% 500%;
-    color: #597BA5;
+    border: 1px solid #0F0F0F;
+    background: linear-gradient(to top right, #0F0F0F, #6B6B6B 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0)) top right/500% 500%;
+    color: #0F0F0F;
 
 }
 .chous:hover {
@@ -258,6 +271,7 @@ main {
   overflow: hidden;
   z-index: -1;
   position: absolute;
+  left: -200px;
 }
 .status_container {
     display: flex;

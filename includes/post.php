@@ -12,6 +12,11 @@ if (empty($post_errors)) {
   $posts->image = $data['post_image'];
   R::store($posts);
   echo "Все отправлено,все хорошо";
+  ?>
+  <script type="text/javascript">
+  	$('#post_input').val('');
+  </script>
+  <?php
  } else {
   echo '<span style="color: red">'.array_shift($post_errors).'</span>';
 }
