@@ -7,7 +7,10 @@
 body {
     background-image: url('https://mechanic-store.com/templates/default/img/pattern.png');
 }
-
+button {
+      border: none;
+    background: white;
+}
 .head {
     background-color: #0F0F0F;
     height: 80px;
@@ -209,6 +212,19 @@ main {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
+}
+.delete_post {
+    margin-left: 15%;
+}
+.delete_post button {
+    transition: 0.3s;
+    width: 15%;
+}
+.delete_post button:hover {
+    color: #D20000;
+}
+.delete_post i{
+        font-size: 21px;
 }
 .post_text {
     width: 100%;

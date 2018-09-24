@@ -47,6 +47,7 @@ if (empty($errors)) {
   $users = R::dispense('users');
   $users->name = $data['name'];
   $users->surname = $data['surname'];
+  $users->image = null;
   $users->email = $data['email'];
   $users->gender = $data['gender'];
   $users->password = password_hash($data['password'], PASSWORD_DEFAULT);

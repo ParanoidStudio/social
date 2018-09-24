@@ -7,6 +7,10 @@
 body {
     background-image: url('https://mechanic-store.com/templates/default/img/pattern.png');
 }
+button {
+      border: none;
+    background: white;
+}
 
 .head {
     background-color: #0F0F0F;
