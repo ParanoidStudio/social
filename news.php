@@ -68,12 +68,31 @@ require 'includes/config.php';
           </div>
        	
        <div class="posts">
+<!--          LOAD
           <script type="text/javascript">
 
             $(document).ready(function() {
             setInterval(function load() {
                 $('.posts').load('includes/fastGen.php');
               }, 100);
+            });
+          </script> -->
+
+          <!-- AJAX -->
+           <script type="text/javascript">
+            $(document).ready(function() {
+            var getPosts =  function() {
+                        $.ajax({
+                          url:'includes/fastGen.php',
+                          success: (function (response) {
+                            $('.posts').html(response);
+                          }),
+                          error: (function(){
+                    
+                          })
+                        });
+                        }
+              setInterval(getPosts, 400);
             });
           </script>
          </div>

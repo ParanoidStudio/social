@@ -120,12 +120,32 @@ $data = $_POST;
 
 
          <div class="posts">
-          <script type="text/javascript">
+<script type="text/javascript">
+</script>
+<!-- LOAD    
+       <script type="text/javascript">
 
             $(document).ready(function() {
             setInterval(function load() {
                 $('.posts').load('includes/fast.php');
               }, 100);
+            });
+          </script> -->
+          <!-- AJAX -->
+          <script type="text/javascript">
+            $(document).ready(function() {
+            var getPosts =  function() {
+                        $.ajax({
+                          url:'includes/fast.php',
+                          success: (function (response) {
+                            $('.posts').html(response);
+                          }),
+                          error: (function(){
+                          })
+                        });
+                        }
+
+              setInterval(getPosts, 400);
             });
           </script>
          </div>
